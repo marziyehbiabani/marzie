@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>فرم عضويت</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=divice-width, initial-scale=1" />
+    <link href="StyleSheet2.css" rel="stylesheet" />
+    <Style>
+        * {
+    font-family:Tahoma;
+}
+
+body {
+    font-family:Nazanin;
+    font-family:Tahoma;
+    font-size:20px;
+    direction:rtl;
+    text-align:center;
+    width:1010px;
+}
+
+form {
+    background-color:lightgreen;
+    background:linear-gradient(lightgreen,whitesmoke);
+    padding-right:10px;
+    text-align:center;
+}
+
+input[type=image] {
+}
+td[colspan="2"] {
+    text-align:center;
+}
+td {
+    text-align:justify;
+}
+input[type=text],input[type=email],input[type=password] {
+    height:20px;
+    border:1px solid darkgreen;
+    border-radius:3px;
+}
+
+input[type=submit],input[type=reset],input[type=button]
+{
+    border:1px solid darkgreen;
+    border-radius:3px;
+}
+
+#wrapper {
+    width:600px;
+    padding-left:30px;
+    padding-right:30px;
+    border-right:1px solid darkgreen;
+    border-left:1px solid darkgreen;
+    border-top:1px solid darkgreen;
+    background-color:lightgreen;
+    background:linear-gradient(lightgreen,whitesmoke);
+    border-radius:10px;
+}
+
+    </Style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <form action="index.php" method="post" enctype="text/plain">
+            <table>
+                <tr>
+                    <td>
+                        نام کاربري
+                    </td>
+                    <td>
+                        <input name="name" type="text" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ايميل
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="example@yahoo.com" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        تلفن
+                    </td>
+                    <td>
+                        <input type="tel" placeholder="........989+" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        سن
+                    </td>
+                    <td>
+                        <input type="range" max="90" min="12" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        رمز عبور
+                    </td>
+                    <td>
+                        <input type="password" id="pass1" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        تکرار رمز عبور
+                    </td>
+                    <td>
+                        <input type="password" id="pass2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        جنسيت
+                    </td>
+                    <td>
+                        <input type="radio" name="r1" />
+                        <input type="radio" name="r1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        استان
+                    </td>
+                    <td>
+                        <select>
+                            <option>
+                                خراسان شمالي
+                            </option>
+                            <option>
+                                خراسان رضوي
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        آيا مايل به دريافت ايميل هستيد
+                    </td>
+                    <td>
+                        <input type="checkbox" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>ارسال عکس</td>
+                    <td>
+                        <input type="file" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>بر روي دايره کليک کنيد</td>
+                    <td>
+                        <input type="image" src="lock.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="ارسال" />
+                        <input type="reset" value="نوسازي" />
+                        <input type="button" value="کليک" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
